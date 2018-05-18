@@ -167,6 +167,15 @@ var Util = {
 	strReverse: function (str) {
 		return str.split('').reverse().join('');
 	},
+	searchParse: function(str) {
+		if (str.length < 3) return;
+        var ret = {};
+        str.substring(1).split('&').forEach(function (it) {
+            var arr = it.split('=');
+            ret[arr[0]] = arr[1];
+        });
+        return ret;
+	},
 
 	/****   日期操作   ****/
 
