@@ -452,12 +452,3 @@ var Util = {
 		return str.replace(/&$/, '');
 	}
 };
-
-
-
-
-
-
-
-
-
